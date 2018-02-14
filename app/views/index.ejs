@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>
+    <%= title %>
+  </title>
+  <!-- CSS Section -->
+  <link rel="stylesheet" href="./bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
+  <link rel='stylesheet' href='./Content/app.css' />
+</head>
+
+<body>
+
+
+
+
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="/">StudentHub</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="./index">
+            <i class="fa fa-lg fa-home"></i> Home
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./feedback">Feedback</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./thankyou">Thank you</a>
+        </li>
+
+      </ul>
+    </div>
+  </nav>
+
+
+
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <div class="col-sm-6 col-md-4  col-md-offset-4,">
+        <h1>
+          Student Registration
+        </h1>
+        <p>Welcome to Student Hub
+        </p>
+      </div>
+    </div>
+
+    <div class="row justify-content-md-center">
+      <div class="col-md-auto">
+        <form action="/feedback" method="POST">
+          <p>
+            <label
+          </p>
+          <p>
+            <label class="col-6 col-md-auto"> email :</label>
+            <input type="email" name="username">
+          </p>
+          <p>
+            <label class="col-6 col-md-auto">Password:</label>
+            <input type="password" name="password">
+          </p>
+          <p>
+            <input class="form-control btn btn-primary" type="submit" value="login" name="loginEnter">
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- JavaScript Section -->
+  <script src="./jquery/dist/jquery.min.js"></script>
+  <script src="./bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="./Scripts/core/app.js"></script>
+</body>
+
+</html>
