@@ -51,10 +51,8 @@
   <div class="container">
     <div class="row justify-content-md-center">
       <div class="col-sm-6 col-md-4  col-md-offset-4,">
-        <h1>
-          Student Registration
-        </h1>
-        <p>Welcome to Student Hub
+       
+        <p>Sign Up
         </p>
       </div>
     </div>
@@ -63,16 +61,27 @@
       <div class="col-md-auto">
         <form action="/feedback" method="POST">
           <p>
-            <label></label>
+            <label class="col-8 col-md-auto"> First Name :</label>
+            <input class="col-8 col-md-auto" type="text" name="fname">
+          </p>
+
+          <p>
+            <label class="col-8 col-md-auto"> Last Name :</label>
+            <input class="col-8 col-md-auto" type="text" name="lname">
           </p>
           <p>
-            <label class="col-6 col-md-auto"> email :</label>
-            <input type="email" class="form-control" name="username">
+            <label class="col-8 col-md-auto"> email :</label>
+            <input class="col-8 col-md-auto" type="email" name="username">
           </p>
           <p>
-            <label class="col-6 col-md-auto">Password:</label>
-            <input type="password" class="form-control" name="password">
+            <label class="col-8 col-md-auto">Password:</label>
+            <input class="col-8 col-md-auto" type="password" name="password">
           </p>
+          <p>
+            <label class="col-8 col-md-auto">Confirm Password:</label>
+            <input class="col-8 col-md-auto" type="password" name="cpassword">
+          </p>
+
           <p>
             <input class="form-control btn btn-primary" type="submit" value="login" name="loginEnter">
           </p>

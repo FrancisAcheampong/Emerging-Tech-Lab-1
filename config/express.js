@@ -8,6 +8,7 @@ let bodyParser = require('body-parser');
 let index = require('../app/routes/index.server.route'); // define the main route
 let feedback = require('../app/routes/feedback.server.route'); // define the main route
 let thankyou = require('../app/routes/thankyou.server.route'); // define the main route
+let signup = require('../app/routes.signUp.server.route');
 
 
 let app = express();  
