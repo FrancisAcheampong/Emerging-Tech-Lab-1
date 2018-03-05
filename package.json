@@ -1,8 +1,8 @@
 {
-  "name": "comp308-w2018-lesson2",
+  "name": "comp308-w2018-lab2",
   "version": "1.0.0",
   "private": true,
-  "description": "Demo Project for NodeJS and Express Generator",
+  "description": "",
   "scripts": {
     "start": "node index.js"
   },
@@ -11,9 +11,9 @@
     "npm": ">=5.6.0"
   },
   "repository": {
-    "url": "github.com/CentennialCollege/COMP308-W2018-Lesson2.git"
+    "url": "github.com/CentennialCollege/COMP308-W2018-Lab2.git"
   },
-  "author": "Tom Tsiliopoulos <tsiliopoulos@hotmail.com>",
+  "author": "Francis <francisacheampong@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "body-parser": "~1.18.2",
