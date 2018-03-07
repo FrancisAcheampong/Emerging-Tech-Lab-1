@@ -30,16 +30,16 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="./index">
+          <a class="nav-link" href="/">
             <i class="fa fa-lg fa-home"></i> Home
             <span class="sr-only">(current)</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="./feedback">Feedback</a>
+          <a class="nav-link" href="/">Feedback</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="./thankyou">Thank you</a>
+          <a class="nav-link" href="/">Thank you</a>
         </li>
 
       </ul>
@@ -50,35 +50,41 @@
 
   <div class="container">
     <div class="row justify-content-md-center">
-      <div class="col-sm-6 col-md-4  col-md-offset-4,">
+      <div class="text-center">
         <h1>
-          Student Registration
+         Login
         </h1>
-        <p>Welcome to Student Hub
-        </p>
       </div>
     </div>
 
     <div class="row justify-content-md-center">
-      
-        <form action="/feedback" method="POST">
-          <p>
-            <label></label>
-          </p>
-          <p>
-            <label class="col-6 col-md-auto"> email :</label>
-            <input type="email" name="username">
-          </p>
-          <p>
-            <label class="col-6 col-md-auto">Password:</label>
-            <input  type="password" name="password">
-          </p>
-          <p>
-            <input class="form-control btn btn-primary" type="submit" value="login" name="loginEnter">
-          </p>
-        </form>
+        <form method="POST" action="/feedback">
+                
+            <div class="form-group">
+                  <label for="username">Username</label>
+                  <input type="text" class="form-control" name="username" aria-describedby="username" placeholder="Enter Username">
+                  <small id="username" ></small>
+                </div>
+           
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" class="form-control" name="password" placeholder="Password">
+            </div>
+            
+            <button type="submit" class="btn btn-primary text center" >Submit</button>
+       
+
+          <div class="form-group">
+              <ul class="nav nav-tabs nav-stacked" >
+                <li><a href="/signup" >Sign up</a></li>
+               
+              </ul>
+          </div>
+  
       </div>
     
+               
+             
   </div>
 
 

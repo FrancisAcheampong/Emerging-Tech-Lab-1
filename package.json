@@ -11,7 +11,7 @@
     "npm": ">=5.6.0"
   },
   "repository": {
-    "url": "github.com/CentennialCollege/COMP308-W2018-Lab2.git"
+    "url": "github.com/francisacheampong/COMP308-W2018-Lab2.git"
   },
   "author": "Francis <francisacheampong@gmail.com>",
   "license": "ISC",
@@ -24,6 +24,7 @@
     "express": "~4.15.5",
     "font-awesome": "^4.7.0",
     "jquery": "^3.3.1",
+    "mongoose": "^5.0.9",
     "morgan": "~1.9.0",
     "serve-favicon": "~2.4.5"
   },

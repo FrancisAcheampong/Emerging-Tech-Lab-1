@@ -45,21 +45,36 @@
             </ul>
         </div>
     </nav>
-    <div class="row justify-content-md-center">
-        <div class="col-md-auto">
-            <form action="/thankyou" method="POST">
-                <p>
-                    <label class="col-6 col-md-auto">Firstname:</label>
-                    <input type="text" name="f_name">
-                </p>
-                <p>
-                    <label class="col-6 col-md-auto">Lastname:</label>
-                    <input class="col-6 col-md-auto" type="text" name="l_name">
-                </p>
-                <p>
-                    <label class="col-6 col-md-auto">e-mail:</label>
-                    <input class="col-6 col-md-auto" type="email" name="username" value= <%= email %>
-                </p>
+
+    <div class="container">
+            <div class="row justify-content-md-center">
+              <div class="text-center col -md-auto">
+                        <h2>Feedback</h2>
+              </div>
+            </div>
+                           
+            <form method="POST" action ="/thankyou">
+                <div class="form-group">
+                    <label for="firstname">Firstname</label>
+                    <input type="text" class="form-control" name="firstname" aria-describedby="firstname" placeholder="Enter firstname">
+                    <small id="emailHelp" class="form-text text-muted"></small>
+                  </div>
+        
+                  <div class="form-group">
+                      <label for="lastname">Lastname</label>
+                      <input type="text" class="form-control" name="lastname" aria-describedby="lastname" placeholder="Enter lastname">
+                      <small id="lastname" class="form-text text-muted"></small>
+                    </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" name="email" aria-describedby="email" placeholder="Enter email">
+                  <small id="emailHelp"></small>
+                </div>
+                <div class="form-group">
+                  <label for="password">Password</label>
+                  <input type="password" class="form-control" name="password" placeholder="Password">
+                </div>
+              
                 <p>
                     <label class="mr-sm-2">Language</label>
                     <select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="CustomSelect">

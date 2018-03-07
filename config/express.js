@@ -8,7 +8,7 @@ let bodyParser = require('body-parser');
 let index = require('../app/routes/index.server.route'); // define the main route
 let feedback = require('../app/routes/feedback.server.route'); // define the main route
 let thankyou = require('../app/routes/thankyou.server.route'); // define the main route
-let signup = require('../app/routes.signUp.server.route');
+let signup = require('../app/routes/signUp.server.route');
 
 
 let app = express();  
@@ -27,6 +27,7 @@ app.use(express.static(path.join(__dirname, '../public')));
 app.use(express.static(path.join(__dirname, '../node_modules')));
 
 app.use('/', index); // main routing file
+app.use('/', signup); // main routing file
 app.use('/feedback', feedback)
 app.use('/thankyou', thankyou)
 
