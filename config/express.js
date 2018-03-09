@@ -1,3 +1,4 @@
+let config = require('./config');
 let express = require('express');
 let path = require('path'); // built-in node module
 //let favicon = require('serve-favicon');
@@ -30,6 +31,7 @@ app.use('/', index); // main routing file
 app.use('/', signup); // main routing file
 app.use('/feedback', feedback)
 app.use('/thankyou', thankyou)
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

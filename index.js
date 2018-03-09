@@ -1,7 +1,10 @@
 
 let app = require('./config/express');
+var mongoose = require('./config/mongoose');
 let debug = require('debug')('comp308-w2018-lesson2:server');
 let http = require('http'); // module built-in to node
+
+let db = mongoose();
 
 /**
  * Get port from environment and store in Express.
