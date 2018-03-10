@@ -6,6 +6,10 @@ let logger = require('morgan');
 let cookieParser = require('cookie-parser');
 let bodyParser = require('body-parser');
 
+var mongoose = require('mongoose');
+mongoose.connect('mongodb://localhost/customer');
+require('./../app/models/customers');
+
 let index = require('../app/routes/index.server.route'); // define the main route
 let feedback = require('../app/routes/feedback.server.route'); // define the main route
 let thankyou = require('../app/routes/thankyou.server.route'); // define the main route
